@@ -1,0 +1,120 @@
+/* Form container */
+.form-container {
+  background-color: var(--card-background);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 32px;
+}
+
+/* Form title */
+.form-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Error message display */
+.error-message {
+  background-color: var(--error-bg);
+  color: var(--error-color);
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+/* Form field group */
+.form-group {
+  margin-bottom: 24px;
+}
+
+/* Form input field */
+.form-input {
+  width: 100%;
+  padding: 13px 16px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.form-input:focus {
+  outline: 1px solid #4e5764;
+}
+
+/* Validation error message */
+.input-error {
+  color: var(--error-color);
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+/* Password visibility toggle */
+.password-toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.password-toggle input {
+  margin-right: 8px;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  background-color: #000000;
+  color: #000000;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #e5e5e5;
+}
+
+.submit-button:disabled {
+  background-color: #485363;
+  cursor: not-allowed;
+}
+
+/* Form footer for switching modes */
+.form-footer {
+  margin-top: 32px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.toggle-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}

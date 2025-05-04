@@ -1,0 +1,78 @@
+/* Home page layout */
+.home-container {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding: 16px;
+}
+
+/* Home content card */
+.home-card {
+  background-color: var(--card-background);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Page title */
+.home-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Welcome message for both states */
+.welcome-message,
+.login-prompt {
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #e5e5e5;
+}
+
+.login-prompt {
+  text-align: center;
+}
+
+/* Profile section */
+.profile-section {
+  background-color: #ffffff11;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.profile-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.profile-info {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.profile-info strong {
+  color: #ffffff;
+}
+
+/* Login button for non-authenticated users */
+.login-link {
+  display: block;
+  width: 200px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 auto;
+  transition: background-color 0.2s;
+}
+
+.login-link:hover {
+  background-color: #e5e5e5;
+}
