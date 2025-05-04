@@ -79,7 +79,7 @@
 /* Submit button */
 .submit-button {
   width: 100%;
-  background-color: #000000;
+  background-color: #ffffff;
   color: #000000;
   padding: 14px;
   border: none;
@@ -117,4 +117,58 @@
 
 .toggle-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px 25px;
+    width: 85%;
+  }
+
+  .form-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 25px 20px;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .form-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .form-input {
+    padding: 10px 12px;
+    font-size: 14px;
+    min-height: 42px;
+  }
+
+  .input-error {
+    font-size: 12px;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .form-footer {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+
+  .password-toggle {
+    font-size: 14px;
+  }
 }

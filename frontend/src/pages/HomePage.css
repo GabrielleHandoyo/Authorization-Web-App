@@ -40,6 +40,8 @@
   padding: 24px;
   border-radius: 8px;
   margin-bottom: 24px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .profile-heading {
@@ -52,6 +54,11 @@
 .profile-info {
   margin-bottom: 12px;
   color: var(--text-secondary);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
+  max-width: 100%;
 }
 
 .profile-info strong {
@@ -75,4 +82,84 @@
 
 .login-link:hover {
   background-color: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    margin-top: 70px;
+  }
+
+  .home-card {
+    padding: 30px 25px;
+  }
+
+  .home-title {
+    font-size: 28px;
+  }
+
+  .profile-section {
+    padding: 20px;
+  }
+
+  .login-link {
+    width: 180px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    margin-top: 60px;
+    padding: 12px;
+  }
+
+  .home-card {
+    padding: 20px 15px;
+  }
+
+  .home-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .welcome-message,
+  .login-prompt {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .profile-heading {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .profile-section {
+    padding: 15px;
+  }
+
+  .profile-info {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .login-link {
+    width: 160px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .profile-info strong + span,
+  .profile-info strong + a {
+    display: inline-block;
+    max-width: calc(100% - 70px);
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 350px) {
+  .login-link {
+    width: 100px;
+    padding: 8px;
+    font-size: 13px;
+  }
 }
